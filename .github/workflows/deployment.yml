@@ -4,11 +4,11 @@ on:
     branches:
       - main
       - dev
-environment:
+env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
-    environment: testing
+    env:  
       MONGODB_CLUSTER_ADDRESS: cluster0.ngb05.mongodb.net
       MONGODB_USERNAME: gitaction
       MONGODB_PASSWORD: a88geOq5L2Jsjg5m
